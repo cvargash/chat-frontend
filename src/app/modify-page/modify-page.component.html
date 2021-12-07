@@ -1,0 +1,60 @@
+<div class="row container-fluid">
+    <div class="row pt-3">
+        <div class="col-6">
+            <app-button [buttonText]="'Cerrar Sesión'" (click)="gotologin()"></app-button>
+        </div>
+        <div class="col-6 btn-back">
+            <app-button [buttonText]="'Regresar'" (click)="gotologin()"></app-button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col container">
+            <img class="imglogo" src="../../assets/chat.png" alt="logochat">
+        </div>
+    </div>
+
+
+    <div class="col-4 container dashback">
+        <div>
+            <h2 class="mb-5">Cambio de Contraseña</h2>
+        </div>
+        <div>
+            <div class="input-group mb-5">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                <input type="password" class="form-control" placeholder="Nueva contraseña" aria-label="Password"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-5">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                <input type="password" class="form-control" placeholder="Confirmar contraseña" aria-label="Password"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="d-grid btnclass">
+                <app-button [buttonText]="'Cambiar'"></app-button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-4 container dashback">
+        <div>
+            <h2 class="mb-5 mt-3">Cambio de Imagen</h2>
+        </div>
+        <div>
+            <div class="mb-3 text-center">
+                <img class="imgavatar img-fluid" src="../../assets/avatar.png" alt="avatar">
+            </div>
+            <div class="input-group mb-5">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-cloud-arrow-up-fill"></i></span>
+                <input type="text" class="form-control" placeholder="Nombre de la imagen" aria-label="Imagen"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="d-grid btnclass">
+                <app-button [buttonText]="'Subir imagen'"></app-button>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,34 @@
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="col container">
+            <img class="imglogo" src="../../assets/chat.png" alt="logochat">
+        </div>
+    </div>
+    <div class="row data-row">
+        <div class="col-4 container dashback">
+            <div >
+                <h2 class="mb-5">Inicia Sesion</h2>
+            </div>
+            <div>
+                <div class="input-group mb-5">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-check-fill"></i></span>
+                    <input  type="email" class="form-control" placeholder="Ingresa tu correo"
+                        aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-5">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                    <input  type="password" class="form-control" placeholder="Password"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="d-grid mt-2 mb-3 btnclass">
+                    <app-button [buttonText]="'Ingresar'"></app-button>
+                </div>
+                <div class="btnclass">
+                    <a routerLink="/register">¿No tienes cuenta? Registrate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

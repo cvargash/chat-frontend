@@ -1,0 +1,60 @@
+<div class="row container-fluid">
+    <div class="row pt-3">
+        <div class="col-4">
+            <app-button [buttonText]="'Cerrar Sesión'" (click)="gotologin()"></app-button>
+        </div>
+        <div class="col-4 btn-back">
+            <app-button [buttonText]="'Ver más'" (click)="gotologin()"></app-button>
+        </div>
+        <div class="col-4 btn-back">
+            <app-button [buttonText]="'Editar'" (click)="gotologin()"></app-button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col container">
+            <img class="imglogo" src="../../assets/chat.png" alt="logochat">
+        </div>
+    </div>
+
+
+    <div class="col-8 container dashback">
+        <div>
+            <h2 class="mb-5">Lista de Grupos de Chat</h2>
+        </div>
+        <div>
+            <table class="table table-dark table-info">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre Grupo</th>
+                        <th scope="col" >Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Grupo número 1</td>
+                        <td>
+                            <a type="button" class="btn">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                            <a type="button" class="btn">
+                                <i class="bi bi-collection-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Grupo número 2</td>
+                        <td>
+                            <a type="button" class="btn">
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </a>
+                            <a type="button" class="btn">
+                                <i class="bi bi-collection-fill"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

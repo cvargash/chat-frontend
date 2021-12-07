@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="col-4 pt-3">
+        <app-button [buttonText]="'Regresar'" (click)="gotologin()"></app-button>
+    </div>
+    <div class="row">
+        <div class="col container">
+            <img class="imglogo" src="../../assets/chat.png" alt="logochat">
+        </div>
+    </div>
+    <div class="row header-container">
+        
+        <div class="col-4 container dashback">
+            <div >
+                <h2 class="mb-5 mt-3">Registrate</h2>
+            </div>
+            <div>
+                <div class="input-group mb-5">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                    <input  type="text" class="form-control" placeholder="Nickname"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-5">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-check-fill"></i></span>
+                    <input  type="email" class="form-control" placeholder="Correo"
+                        aria-label="Email" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-5">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+                    <input  type="password" class="form-control" placeholder="Password"
+                        aria-label="Password" aria-describedby="basic-addon1">
+                </div>
+                <div class="d-grid btnclass">
+                    <app-button [buttonText]="'Registrar'" (click)="gotoRegister()"></app-button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
